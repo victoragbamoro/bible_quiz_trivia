@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="trivia.png" type="image/png">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" width="200" height="auto">
+    <h1>Children's Day Bible Trivia</h1>
+    <div id="game-container">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div class="answer-container">
+                <div class="answer" onclick="selectAnswer(this, 'A')"><span class="label">A:</span> <span class="text"></span></div>
+                <div class="answer" onclick="selectAnswer(this, 'B')"><span class="label">B:</span> <span class="text"></span></div>
+                <div class="answer" onclick="selectAnswer(this, 'C')"><span class="label">C:</span> <span class="text"></span></div>
+                <div class="answer" onclick="selectAnswer(this, 'D')"><span class="label">D:</span> <span class="text"></span></div>
+            </div>
+        </div>
+        <p id="verse"></p>
+        <button id="show-answer-button" onclick="showAnswer()">Show Answer</button>
+        <button id="next-button" onclick="nextQuestion()">Next Question</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
